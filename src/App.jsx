@@ -1,5 +1,4 @@
 import React from "react";
-import BlogCard from "./components/BlogCard";
 
 export default function App() {
 	const blogs = [
@@ -32,21 +31,8 @@ export default function App() {
 		},
 	];
 	return (
-		<div className="w-full min-h-screen bg-gradient-to-t from-black to-gray-900 flex justify-center items-center">
-			<div className="max-w-6xl mx-auto ">
-				<div className="h-72 text-white text-center">
-					<h1 className="text-4xl font-bold">Random Title</h1>
-					<p className="text-xl mt-5">
-						Passionate about brain optimization, life hacks, and
-						healthy success habits to empower individuals.
-					</p>
-				</div>
-				<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-32">
-					{blogs.map((blog, index) => {
-						return <BlogCard blog={blog} key={index} />;
-					})}
-				</div>
-			</div>
+		<div>
+			<h1>Build a react blog section with tailwindcss</h1>
 		</div>
 	);
 }
